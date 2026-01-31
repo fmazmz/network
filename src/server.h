@@ -11,6 +11,7 @@ class Server
 public:
     bool CreateSocket();
     bool BindSocket();
+    bool Listen();
 
 private:
     int sock = -1;

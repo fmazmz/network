@@ -35,3 +35,15 @@ bool Server::BindSocket()
     std::cout << "[+] Bind socket success, port: " << this->port << "\n";
     return true;
 }
+
+bool Server::Listen()
+{
+    if (listen(this->sock, 10) < 0)
+    {
+        std::cout << "[-] Error while entering passive listen mode" << "\n";
+        return false;
+    }
+
+    std::cout << "[+] Server socket listening on port: " << this->port << "\n";
+    return true;
+}

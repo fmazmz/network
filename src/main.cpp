@@ -9,5 +9,7 @@ int main() {
     Server server;
     server.CreateSocket();
     server.BindSocket();
+    server.Listen();
+
     return 0;
 }
