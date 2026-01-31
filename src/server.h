@@ -10,9 +10,11 @@ class Server
 {
 public:
     bool CreateSocket();
+    bool BindSocket();
 
 private:
     int sock = -1;
+    int port = 8080;
     sockaddr_in serverAddr;
 };
 

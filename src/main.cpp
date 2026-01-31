@@ -8,5 +8,6 @@
 int main() {
     Server server;
     server.CreateSocket();
+    server.BindSocket();
     return 0;
 }
